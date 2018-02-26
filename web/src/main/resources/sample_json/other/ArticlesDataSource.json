@@ -1,0 +1,87 @@
+[
+             {
+                "Type": "Section",
+                "Title": "Niezbędne podstawy treningu",
+                "Icon": "Images/menuitem-icon.png",
+                "Target": "FAQPage",
+   	        "File" : "Data/FAQ.htm"
+            },
+            {
+                "Type": "Section",
+                "Title": "Rozgrzewka",
+                "Icon": "Images/menuitem-icon.png",
+                "Target": "RozgrzewkaPage",
+   	        "File" : "Data/RozgrzewkaDataSource.htm"
+            },
+            {
+                "Type": "Section",
+                "Title": "Trening interwałowy",
+                "Icon": "Images/menuitem-icon.png",
+                "Target": "HiitPage",
+   	        "File" : "Data/Hiit.htm"
+            },
+            {
+                "Type": "Section",
+                "Title": "Trening aerobowy",
+                "Icon": "Images/menuitem-icon.png",
+                "Target": "TreningAerobowyPage",
+   	        "File" : "Data/TreningAerobowyDataSource.htm"
+            },
+            {
+                "Type": "Section",
+                "Title": "Tabata",
+                "Icon": "Images/menuitem-icon.png",
+                "Target": "TabataPage",
+   	        "File" : "Data/Tabata.htm"
+            },
+            {
+                "Type": "Section",
+                "Title": "Metody dokładania ciężaru",
+                "Icon": "Images/menuitem-icon.png",
+                "Target": "MetodyDokadaniaCiezaruPage",
+   	        "File" : "Data/MetodyDokadaniaCiezaruDataSource.htm"
+            },
+            {
+                "Type": "Section",
+                "Title": "Zasady treningowe",
+                "Icon": "Images/menuitem-icon.png",
+                "Target": "ZasadyTreningowePage",
+   	        "File" : "Data/ZasadyTreningowe.htm"
+            },
+            {
+                "Type": "Url",
+                "Title": "Trening ogólnorozwojowy",
+                "Icon": "Images/menuitem-icon.png",
+                "Target": "http://www.kfd.pl/trening-full-body-workout-263303.html/",
+   	        "File" : ""
+            },
+            {
+                "Type": "Url",
+                "Title": "Jak ułożyć swój plan?",
+                "Icon": "Images/menuitem-icon.png",
+                "Target": "http://www.kfd.pl/jak-u%C5%82ozy%C4%87-plan-treningowy-abc-uk%C5%82adania-trening%C3%B3w-77511.html/",
+   	        "File" : ""
+            },
+            {
+                "Type": "Url",
+                "Title": "Podstawy treningu CrossFit",
+                "Icon": "Images/menuitem-icon.png",
+                "Target": "http://www.kfd.pl/crossfit-program-dla-poczatkujacych-246320.html/",
+   	        "File" : ""
+            },
+            {
+                "Type": "Url",
+                "Title": "Trening PHAT",
+                "Icon": "Images/menuitem-icon.png",
+                "Target": "http://www.kfd.pl/phat-power-hypertrophy-adaptive-training-206511.html/",
+   	        "File" : ""
+            },
+            {
+                "Type": "Url",
+                "Title": "Trening metodą HEAVY DUTY",
+                "Icon": "Images/menuitem-icon.png",
+                "Target": "http://www.kfd.pl/trening-metoda-heavy-duty-mike-menzter-191.html/",
+   	        "File" : ""
+            }
+        ]
+

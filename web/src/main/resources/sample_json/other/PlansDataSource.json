@@ -1,0 +1,74 @@
+[
+        {
+            "Title": "Trening dla początkujących",
+            "Subtitle": "ogólnorozwojowy wdrażający ćwiczącego w metodykę treningu",
+            "Description": "3 dni treningowe w tygodniu, przykładowo: poniedziałek-środa-piątek lub wtorek-czwartek-sobota. Nie wykonuj treningów dzień po dniu. Mięśnie muszą mieć czas na regeneracje!",
+            "Rozgrzewka": "Przed każdym treningiem solidna, dynamiczna rozgrzewka. Więcej możesz przeczytać w dziale Artykuły.",
+            "PoTreningu": "Po treningu staraj się poświęcić przynajmniej 5 minut na rozciąganie mięśni. Wskazane są również, w miarę możliwości, zabiegi relaksacyjne typu gorąca kąpiel/sauna/masaż.",
+            "Porady": "Serie wykonuj z zapasem 2-3 powtórzeń. Na powtórzenia wymuszone jeszcze przyjdzie czas. Stosuj kilka serii rozgrzewkowych z ciężarem na poziomie 50% maksymalnego obciążenia. Serie rozgrzewkowe wykonuj tylko przed pierwszym ćwiczeniem w danym dniu treningowym. Każde ćwiczenie wykonuj starannie, stosuj się do wskazówek zawartych w Atlasie.",
+            "Oautorze": "Trening został ułożony przez Marcina \"Massive'a\" Dybnickiego - medalistę zawodów federacji IFBB, brązowego medalistę Mistrzostw Polski w kulturystyce. Marcin od wielu lat jest trenerem personalnym oraz doradcą suplementacyjnym. Cały czas poszerza swoją wiedzę z zakresu metodyki treningowej, praktycznego zastosowania suplementów diety oraz innowacyjnych modeli żywieniowych.",
+             "ImageUrl": "Images/menuitem-icon.png",
+            "_id": "TreningPoczatkujacyPage",
+			"File": "TreningPoczatkujacyDzien"
+        },
+        {
+            "Title": "Trening dla średnio-zaawansowanych",
+            "Subtitle": "pomocny w budowaniu masy mięśniowej",
+            "Description": "3 dni treningowe w tygodniu, przykładowo: poniedziałek-środa-piątek lub wtorek-czwartek-sobota. Nie wykonuj treningów dzień po dniu. Mięśnie muszą mieć czas na regeneracje! Po każdym treningu wykonaj kilka serii dowolnego ćwiczenia na mięśnie brzucha. Staraj się dobierać w miarę różnorodne ćwiczenia.",
+            "Rozgrzewka": "Przed każdym treningiem solidna, dynamiczna rozgrzewka. Więcej możesz przeczytać w dziale Artykuły.",
+            "PoTreningu": "Po treningu staraj się poświęcić przynajmniej 5 minut na rozciąganie mięśni. Wskazane są również, w miarę możliwości, zabiegi relaksacyjne typu gorąca kąpiel/sauna/masaż.",
+            "Porady": "Pamiętaj, że na początku musisz dobrać odpowiedni ciężar w każdym ćwiczeniu. Z tygodnia na tydzień, wraz ze wzrostem siły, zwiększaj ciężary intuicyjnie. Stosuj kilka serii rozgrzewkowych z ciężarem na poziomie 50% maksymalnego obciążenia. Serie rozgrzewkowe wykonuj tylko przed pierwszym ćwiczeniem w danym dniu treningowym. Każde ćwiczenie wykonuj starannie, stosuj się do wskazówek zawartych w Atlasie. Jeżeli czujesz, że nie dasz rady zrobić ostatnich powtórzeń - poproś kogoś o asekuracje i pomoc w razie potrzeby.",
+            "Oautorze": "Trening został ułożony przez Marcina \"Massive'a\" Dybnickiego - medalistę zawodów federacji IFBB, brązowego medalistę Mistrzostw Polski w kulturystyce. Marcin od wielu lat jest trenerem personalnym oraz doradcą suplementacyjnym. Cały czas poszerza swoją wiedzę z zakresu metodyki treningowej, praktycznego zastosowania suplementów diety oraz innowacyjnych modeli żywieniowych.",
+            "ImageUrl": "Images/menuitem-icon.png",
+            "_id": "TreningSredniMasa",
+			"File": "TreningSrednioZaMasaDzien"
+        },
+        {
+            "Title": "Trening dla średnio-zaawansowanych",
+            "Subtitle": "stosowany w okresie redukcyjnym",
+            "Description": "Jeżeli trenujesz 3 razy w tygodniu - treningi poniedziałek-środa-piątek lub wtorek-czwartek-sobota. Jeżeli chcesz trenować więcej - treningi wykonuj co drugi dzień. Wtedy każda partia ćwiczona jest co 6 dni. W dni wolne od treningów siłowych, w miarę swoich możliwości, wykonuj treningi aerobowe z umiarkowaną intensywnością. Rozpocznij od 25-30min i stopniowo wydłużaj ich czas do 40-45min. Oznaczenia \"1a,1b\" w planie treningowym oznaczają, że ćwiczenia mają być wykonywane przemiennie. Na jednym treningu wykonywane mają być ćwiczenia \"a\", na drugim \"b\".",
+            "Rozgrzewka": "Przed każdym treningiem solidna, dynamiczna rozgrzewka. Więcej możesz przeczytać w dziale Artykuły.",
+            "PoTreningu": "Po treningu staraj się poświęcić przynajmniej 5 minut na rozciąganie mięśni. Wskazane są również, w miarę możliwości, zabiegi relaksacyjne typu gorąca kąpiel/sauna/masaż.",
+            "Porady": "Przerwy między seriami około 1-1.5 minuty. Serie wykonuj z zapasem 1-2 powtórzeń. Stosuj kilka serii rozgrzewkowych z ciężarem na poziomie 50% obciążenia roboczego. Serie rozgrzewkowe wykonuj tylko przed pierwszym ćwiczeniem w danym dniu treningowym. Każde ćwiczenie wykonuj starannie, stosuj się do wskazówek zawartych w Atlasie.",
+            "Oautorze": "Trening został ułożony przez Marcina \"Massive'a\" Dybnickiego - medalistę zawodów federacji IFBB, brązowego medalistę Mistrzostw Polski w kulturystyce. Marcin od wielu lat jest trenerem personalnym oraz doradcą suplementacyjnym. Cały czas poszerza swoją wiedzę z zakresu metodyki treningowej, praktycznego zastosowania suplementów diety oraz innowacyjnych modeli żywieniowych.",
+            "ImageUrl": "Images/menuitem-icon.png",
+            "_id": "TreningSredniReduPage",
+			"File": "TreningSrednioZaSplitDzien"
+        },        
+		{
+            "Title": "Trening dla zaawansowanych",
+            "Subtitle": "odpowiedni w okresie masowym jak i redukcyjnym",
+            "Description": "Trening typu split z modyfikacjami. Dzień pierwszy - klatka, barka. Dzień drugi - bicepsy, tricepsy. Dzień trzeci - plecy, tył barków, mięśnie czworoboczne. Dzień czwarty - nogi. Trening w systemie: 2 dni treningowe - 1 dzień przerwy - 1 dzień treningowy - 1 dzień przerwy - 1 dzień treningowy - 1 dzień przerwy. Po każdym treningu wykonaj kilka serii dowolnego ćwiczenia na mięśnie brzucha. Staraj się dobierać w miarę różnorodne ćwiczenia. W okresie redukcyjnym, jak powszechnie wiadomo, należy dodać trening aerobowy/interwałowy. Zwiększać stopniowo ilość treningów, ich długość i intensywność.",
+            "Rozgrzewka": "Przed każdym treningiem solidna, dynamiczna rozgrzewka. Więcej możesz przeczytać w dziale Artykuły.",
+            "PoTreningu": "Po treningu staraj się poświęcić przynajmniej 5 minut na rozciąganie mięśni. Wskazane są również, w miarę możliwości, zabiegi relaksacyjne typu gorąca kąpiel/sauna/masaż.",
+            "Porady": "Obserwuj swoje ciało i odpowiednio dobieraj ciężar w ćwiczeniach. Zwracaj uwagę na technikę.",
+            "Oautorze": "Trening został ułożony przez Marcina \"Massive'a\" Dybnickiego - medalistę zawodów federacji IFBB, brązowego medalistę Mistrzostw Polski w kulturystyce. Marcin od wielu lat jest trenerem personalnym oraz doradcą suplementacyjnym. Cały czas poszerza swoją wiedzę z zakresu metodyki treningowej, praktycznego zastosowania suplementów diety oraz innowacyjnych modeli żywieniowych.",
+            "ImageUrl": "Images/menuitem-icon.png",
+            "_id": "TreningZaPage",
+			"File": "TreningZaSplitDzien"
+        },
+        {
+            "Title": "Trening dla kobiet",
+            "Subtitle": "w domowych warunkach",
+            "Description": "Jeżeli trenujesz 3 razy w tygodniu - treningi poniedziałek-środa-piątek lub wtorek-czwartek-sobota. Nie wykonuj treningów dzień po dniu. Mięśnie muszą mieć czas na regeneracje! Do treningu nie potrzebujesz żadnego sprzętu. Wykonywany jest on na zasadach kalisteniki, czyli treningu z ciężarem własnego ciała. W dni wolne od treningów siłowych, w miarę swoich możliwości, wykonuj treningi aerobowe (marsze w plenerze, pływanie, bieżnia, rowerek stacjonarny, rower, steper, wioślarz) z umiarkowaną intensywnością. Rozpocznij od 25-30min i stopniowo wydłużaj ich czas do 40-45min.",
+            "Rozgrzewka": "Przed każdym treningiem solidna, dynamiczna rozgrzewka. Więcej możesz przeczytać w dziale Artykuły.",
+            "PoTreningu": "Po treningu staraj się poświęcić przynajmniej 5 minut na rozciąganie mięśni. Wskazane są również, w miarę możliwości, zabiegi relaksacyjne typu gorąca kąpiel/sauna/masaż.",
+            "Porady": "Większość ćwiczeń zawarta jest w naszym atlasie. Sprawdź jak je poprawnie wykonywać. Dodatkowy instruktraż znajdziesz na kanale YouTube KFD.PL pod nazwą \"Trening W Domu\".",
+            "Oautorze": "Trening został ułożony przez Marcina \"Massive'a\" Dybnickiego - medalistę zawodów federacji IFBB, brązowego medalistę Mistrzostw Polski w kulturystyce. Marcin od wielu lat jest trenerem personalnym oraz doradcą suplementacyjnym. Cały czas poszerza swoją wiedzę z zakresu metodyki treningowej, praktycznego zastosowania suplementów diety oraz innowacyjnych modeli żywieniowych.",
+            "ImageUrl": "Images/menuitem-icon.png",
+            "_id": "TreningKobietyPage",
+			"File": "TreningKobietyDzien"
+        },
+        {
+            "Title": "Trening dla kobiet",
+            "Subtitle": "pomocny w kształtowaniu sylwetki na siłowni",
+            "Description": "Trening odpowiedni do kształtowania sylwetki jak i zrzucania zbędnych kilogramów. Jeżeli trenujesz 3 razy w tygodniu - treningi poniedziałek-środa-piątek lub wtorek-czwartek-sobota. Nie wykonuj treningów dzień po dniu. Mięśnie muszą mieć czas na regeneracje! W dni wolne od treningów siłowych, w miarę swoich możliwości, wykonuj treningi aerobowe (marsze w plenerze, pływanie, bieżnia, rowerek stacjonarny, rower, steper, wioślarz) z umiarkowaną intensywnością. Rozpocznij od 25-30min i stopniowo wydłużaj ich czas do 40-45min.",
+            "Rozgrzewka": "Przed każdym treningiem solidna, dynamiczna rozgrzewka. Więcej możesz przeczytać w dziale Artykuły.",
+            "PoTreningu": "Po treningu staraj się poświęcić przynajmniej 5 minut na rozciąganie mięśni. Wskazane są również, w miarę możliwości, zabiegi relaksacyjne typu gorąca kąpiel/sauna/masaż.",
+            "Porady": "Przede wszystkim NIE WSTYDŹ SIĘ iść na siłownie. Trening siłowy jest naprawdę świetnym rozwiązaniem również dla kobiet. Stosuj kilka serii rozgrzewkowych. Serie rozgrzewkowe wykonuj tylko przed pierwszym ćwiczeniem w danym dniu treningowym. Każde ćwiczenie wykonuj starannie, stosuj się do wskazówek zawartych w Atlasie.",
+            "Oautorze": "Trening został ułożony przez Marcina \"Massive'a\" Dybnickiego - medalistę zawodów federacji IFBB, brązowego medalistę Mistrzostw Polski w kulturystyce. Marcin od wielu lat jest trenerem personalnym oraz doradcą suplementacyjnym. Cały czas poszerza swoją wiedzę z zakresu metodyki treningowej, praktycznego zastosowania suplementów diety oraz innowacyjnych modeli żywieniowych.",
+            "ImageUrl": "Images/menuitem-icon.png",
+            "_id": "TreningKobietySilowniaPage",
+			"File": "TreningKobietySilowniaDzien"
+        }      
+    ]

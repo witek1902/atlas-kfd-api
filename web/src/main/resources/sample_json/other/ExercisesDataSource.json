@@ -1,0 +1,58 @@
+[
+    {
+      "Type": "Section",
+      "Title": "Klatka piersiowa",
+      "Icon": "Images/av-klatka.png",
+      "Target": "KlatkaPiersiowaPage",
+      "File": "KlatkaPiersiowaDataSource.json"
+    },
+    {
+      "Type": "Section",
+      "Title": "Plecy",
+      "Icon": "Images/av-plecy.png",
+      "Target": "PlecyPage",
+      "File": "PlecyDataSource.json"
+    },
+    {
+      "Type": "Section",
+      "Title": "Barki",
+      "Icon": "Images/av-barki.png",
+      "Target": "BarkiPage",
+      "File": "BarkiDataSource.json"
+    },
+    {
+      "Type": "Section",
+      "Title": "Biceps",
+      "Icon": "Images/av-biceps.png",
+      "Target": "BicepsIInneZginaczePage",
+      "File": "BicepsIInneZginaczeDataSource.json"
+    },
+    {
+      "Type": "Section",
+      "Title": "Triceps",
+      "Icon": "Images/av-triceps.png",
+      "Target": "TricepsIInneProstownikiPage",
+      "File": "TricepsIInneProstownikiDataSource.json"
+    },
+    {
+      "Type": "Section",
+      "Title": "Nogi i pośladki",
+      "Icon": "Images/av-nogi.png",
+      "Target": "NogiIPosladkiPage",
+      "File": "NogiIPosladkiDataSource.json"
+    },
+    {
+      "Type": "Section",
+      "Title": "Przedramiona",
+      "Icon": "Images/av-przedramie.png",
+      "Target": "PrzedramionaPage",
+      "File": "PrzedramionaDataSource.json"
+    },
+    {
+      "Type": "Section",
+      "Title": "Brzuch",
+      "Icon": "Images/av-brzuch.png",
+      "Target": "BrzuchPage",
+      "File": "BrzuchDataSource.json"
+    }
+  ]
