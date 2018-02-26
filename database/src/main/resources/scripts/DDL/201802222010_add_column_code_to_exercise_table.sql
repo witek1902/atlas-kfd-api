@@ -1,0 +1,1 @@
+ALTER TABLE public.exercise ADD COLUMN code TEXT NOT NULL UNIQUE;

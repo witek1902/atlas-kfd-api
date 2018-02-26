@@ -1,0 +1,1 @@
+ALTER TABLE public.training_plan_day ADD COLUMN code TEXT NOT NULL UNIQUE;
