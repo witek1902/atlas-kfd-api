@@ -1,0 +1,113 @@
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd">
+
+    <changeSet id="DDL-201802152215_create_exercise_section_table" author="Robert Witkowski" context="DDL">
+        <sqlFile path="DDL/201802152215_create_exercise_section_table.sql" relativeToChangelogFile="true" splitStatements="false" endDelimiter=";"/>
+    </changeSet>
+
+    <changeSet id="DDL-201802152216_create_exercise_table" author="Robert Witkowski" context="DDL">
+        <sqlFile path="DDL/201802152216_create_exercise_table.sql" relativeToChangelogFile="true" splitStatements="false" endDelimiter=";"/>
+    </changeSet>
+
+    <changeSet id="DDL-201802152217_create_exercise_section_exercise_table" author="Robert Witkowski" context="DDL">
+        <sqlFile path="DDL/201802152217_create_exercise_section_exercise_table.sql" relativeToChangelogFile="true" splitStatements="false" endDelimiter=";"/>
+    </changeSet>
+
+    <changeSet id="DDL-201802152219_create_training_plan_table" author="Robert Witkowski" context="DDL">
+        <sqlFile path="DDL/201802152219_create_training_plan_table.sql" relativeToChangelogFile="true" splitStatements="false" endDelimiter=";"/>
+    </changeSet>
+
+    <changeSet id="DDL-201802152220_create_training_plan_day_table" author="Robert Witkowski" context="DDL">
+        <sqlFile path="DDL/201802152220_create_training_plan_day_table.sql" relativeToChangelogFile="true" splitStatements="false" endDelimiter=";"/>
+    </changeSet>
+
+    <changeSet id="DDL-201802222009_create_training_plan_day_exercise_table" author="Robert Witkowski" context="DDL">
+        <sqlFile path="DDL/201802222009_create_training_plan_day_exercise_table.sql" relativeToChangelogFile="true" splitStatements="false" endDelimiter=";"/>
+    </changeSet>
+
+    <changeSet id="DDL-201802222010_add_column_code_to_exercise_table" author="Robert Witkowski" context="DDL">
+        <sqlFile path="DDL/201802222010_add_column_code_to_exercise_table.sql" relativeToChangelogFile="true" splitStatements="false" endDelimiter=";"/>
+    </changeSet>
+
+    <changeSet id="DML-201802221924_add_initial_data_to_exercise_section_table" author="Robert Witkowski" context="DML">
+        <sqlFile path="DML/201802221924_add_initial_data_to_exercise_section_table.sql" relativeToChangelogFile="true" splitStatements="false" endDelimiter=";"/>
+    </changeSet>
+
+    <changeSet id="DML-201802221925_add_initial_data_to_exercise_table_part_1" author="Robert Witkowski" context="DML">
+        <sqlFile path="DML/201802221925_add_initial_data_to_exercise_table_part_1.sql" relativeToChangelogFile="true" splitStatements="false" endDelimiter=";"/>
+    </changeSet>
+
+    <changeSet id="DML-201802221926_add_initial_data_to_exercise_section_exercise_table_part_1" author="Robert Witkowski" context="DML">
+        <sqlFile path="DML/201802221926_add_initial_data_to_exercise_section_exercise_table_part_1.sql" relativeToChangelogFile="true" splitStatements="false" endDelimiter=";"/>
+    </changeSet>
+
+    <changeSet id="DDL-201802261936_add_column_code_to_training_plan_table" author="Robert Witkowski" context="DDL">
+        <sqlFile path="DDL/201802261936_add_column_code_to_training_plan_table.sql" relativeToChangelogFile="true" splitStatements="false" endDelimiter=";"/>
+    </changeSet>
+
+    <changeSet id="DDL-201802261937_add_column_code_to_training_plan_day_table" author="Robert Witkowski" context="DDL">
+        <sqlFile path="DDL/201802261937_add_column_code_to_training_plan_day_table.sql" relativeToChangelogFile="true" splitStatements="false" endDelimiter=";"/>
+    </changeSet>
+
+    <changeSet id="DML-201802221925_add_initial_data_to_exercise_table_part_2" author="Robert Witkowski" context="DML">
+        <sqlFile path="DML/201802221925_add_initial_data_to_exercise_table_part_2.sql" relativeToChangelogFile="true" splitStatements="false" endDelimiter=";"/>
+    </changeSet>
+
+    <changeSet id="DML-201802221926_add_initial_data_to_exercise_section_exercise_table_part_2" author="Robert Witkowski" context="DML">
+        <sqlFile path="DML/201802221926_add_initial_data_to_exercise_section_exercise_table_part_2.sql" relativeToChangelogFile="true" splitStatements="false" endDelimiter=";"/>
+    </changeSet>
+
+    <changeSet id="DML-201802221925_add_initial_data_to_exercise_table_part_3" author="Robert Witkowski" context="DML">
+        <sqlFile path="DML/201802221925_add_initial_data_to_exercise_table_part_3.sql" relativeToChangelogFile="true" splitStatements="false" endDelimiter=";"/>
+    </changeSet>
+
+    <changeSet id="DML-201802221926_add_initial_data_to_exercise_section_exercise_table_part_3" author="Robert Witkowski" context="DML">
+        <sqlFile path="DML/201802221926_add_initial_data_to_exercise_section_exercise_table_part_3.sql" relativeToChangelogFile="true" splitStatements="false" endDelimiter=";"/>
+    </changeSet>
+
+    <changeSet id="DML-201802221925_add_initial_data_to_exercise_table_part_4" author="Robert Witkowski" context="DML">
+        <sqlFile path="DML/201802221925_add_initial_data_to_exercise_table_part_4.sql" relativeToChangelogFile="true" splitStatements="false" endDelimiter=";"/>
+    </changeSet>
+
+    <changeSet id="DML-201802221926_add_initial_data_to_exercise_section_exercise_table_part_4" author="Robert Witkowski" context="DML">
+        <sqlFile path="DML/201802221926_add_initial_data_to_exercise_section_exercise_table_part_4.sql" relativeToChangelogFile="true" splitStatements="false" endDelimiter=";"/>
+    </changeSet>
+
+    <changeSet id="DML-201802221925_add_initial_data_to_exercise_table_part_5" author="Robert Witkowski" context="DML">
+        <sqlFile path="DML/201802221925_add_initial_data_to_exercise_table_part_5.sql" relativeToChangelogFile="true" splitStatements="false" endDelimiter=";"/>
+    </changeSet>
+
+    <changeSet id="DML-201802221926_add_initial_data_to_exercise_section_exercise_table_part_5" author="Robert Witkowski" context="DML">
+        <sqlFile path="DML/201802221926_add_initial_data_to_exercise_section_exercise_table_part_5.sql" relativeToChangelogFile="true" splitStatements="false" endDelimiter=";"/>
+    </changeSet>
+
+    <changeSet id="DML-201802221925_add_initial_data_to_exercise_table_part_6" author="Robert Witkowski" context="DML">
+        <sqlFile path="DML/201802221925_add_initial_data_to_exercise_table_part_6.sql" relativeToChangelogFile="true" splitStatements="false" endDelimiter=";"/>
+    </changeSet>
+
+    <changeSet id="DML-201802221926_add_initial_data_to_exercise_section_exercise_table_part_6" author="Robert Witkowski" context="DML">
+        <sqlFile path="DML/201802221926_add_initial_data_to_exercise_section_exercise_table_part_6.sql" relativeToChangelogFile="true" splitStatements="false" endDelimiter=";"/>
+    </changeSet>
+
+    <changeSet id="DML-201802221925_add_initial_data_to_exercise_table_part_7" author="Robert Witkowski" context="DML">
+        <sqlFile path="DML/201802221925_add_initial_data_to_exercise_table_part_7.sql" relativeToChangelogFile="true" splitStatements="false" endDelimiter=";"/>
+    </changeSet>
+
+    <changeSet id="DML-201802221926_add_initial_data_to_exercise_section_exercise_table_part_7" author="Robert Witkowski" context="DML">
+        <sqlFile path="DML/201802221926_add_initial_data_to_exercise_section_exercise_table_part_7.sql" relativeToChangelogFile="true" splitStatements="false" endDelimiter=";"/>
+    </changeSet>
+
+    <changeSet id="DML-201802221925_add_initial_data_to_exercise_table_part_8" author="Robert Witkowski" context="DML">
+        <sqlFile path="DML/201802221925_add_initial_data_to_exercise_table_part_8.sql" relativeToChangelogFile="true" splitStatements="false" endDelimiter=";"/>
+    </changeSet>
+
+    <changeSet id="DML-201802221926_add_initial_data_to_exercise_section_exercise_table_part_8" author="Robert Witkowski" context="DML">
+        <sqlFile path="DML/201802221926_add_initial_data_to_exercise_section_exercise_table_part_8.sql" relativeToChangelogFile="true" splitStatements="false" endDelimiter=";"/>
+    </changeSet>
+
+    <changeSet id="DML-201802222008_add_initial_data_to_training_plan_table" author="Robert Witkowski" context="DML">
+        <sqlFile path="DML/201802222008_add_initial_data_to_training_plan_table.sql" relativeToChangelogFile="true" splitStatements="false" endDelimiter=";"/>
+    </changeSet>
+
+</databaseChangeLog>
