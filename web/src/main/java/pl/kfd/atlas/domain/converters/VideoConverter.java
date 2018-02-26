@@ -6,7 +6,7 @@ import javax.persistence.AttributeConverter;
 import javax.persistence.Converter;
 
 @Converter(autoApply = true)
-class VideoConverter implements AttributeConverter<Video, String> {
+public class VideoConverter implements AttributeConverter<Video, String> {
 
     @Override
     public String convertToDatabaseColumn(Video video) {

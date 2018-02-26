@@ -6,7 +6,7 @@ import javax.persistence.AttributeConverter;
 import javax.persistence.Converter;
 
 @Converter(autoApply = true)
-class ImageConverter implements AttributeConverter<Image, String> {
+public class ImageConverter implements AttributeConverter<Image, String> {
 
     @Override
     public String convertToDatabaseColumn(Image image) {

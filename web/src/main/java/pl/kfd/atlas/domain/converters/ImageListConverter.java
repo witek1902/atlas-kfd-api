@@ -10,7 +10,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 @Converter(autoApply = true)
-class ImageListConverter implements AttributeConverter<ImageList, String> {
+public class ImageListConverter implements AttributeConverter<ImageList, String> {
 
     public static final String DELIMITER = ";";
 
