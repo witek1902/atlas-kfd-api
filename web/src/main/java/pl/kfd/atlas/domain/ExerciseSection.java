@@ -5,6 +5,7 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import pl.kfd.atlas.domain.common.BaseEntity;
+import pl.kfd.atlas.domain.common.Image;
 
 import javax.persistence.*;
 import java.util.Set;
@@ -21,7 +22,7 @@ public class ExerciseSection extends BaseEntity {
     private String title;
 
     @Column(name = "ICON_URL")
-    private String iconUrl;
+    private Image image;
 
     @ManyToMany(cascade = {
             CascadeType.PERSIST,

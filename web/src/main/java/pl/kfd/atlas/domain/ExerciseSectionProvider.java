@@ -15,6 +15,7 @@ import java.util.stream.Collectors;
 public class ExerciseSectionProvider {
 
     private final ExerciseSectionRepository exerciseSectionRepository;
+    private final ExerciseSectionBaseDtoConverter exerciseSectionBaseDtoConverter;
 
     public Collection<ExerciseSectionBaseDto> getAll() {
         List<ExerciseSection> sections = exerciseSectionRepository.findAll();
@@ -22,7 +23,7 @@ public class ExerciseSectionProvider {
             return new ArrayList<>();
 
         return sections.stream()
-                .map(ExerciseSectionBaseDto::convert)
+                .map(exerciseSectionBaseDtoConverter::toDto)
                 .collect(Collectors.toList());
     }
 

@@ -1,5 +1,7 @@
 package pl.kfd.atlas.domain.converters;
 
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
 import pl.kfd.atlas.domain.common.Image;
 
 import javax.persistence.AttributeConverter;
