@@ -1,0 +1,1 @@
+UPDATE public.exercise_section SET ICON_URL = replace(ICON_URL, '/avatars/', 'http://localhost:8081/avatars/');

@@ -110,4 +110,12 @@
         <sqlFile path="DML/201802222008_add_initial_data_to_training_plan_table.sql" relativeToChangelogFile="true" splitStatements="false" endDelimiter=";"/>
     </changeSet>
 
+    <changeSet id="DML-201802281654_update_image_urls_in_exercise_table" author="Robert Witkowski" context="DML">
+        <sqlFile path="DML/201802281654_update_image_urls_in_exercise_table.sql" relativeToChangelogFile="true" splitStatements="false" endDelimiter=";"/>
+    </changeSet>
+
+    <changeSet id="DML-201802281657_update_image_urls_in_exercise_section_table" author="Robert Witkowski" context="DML">
+        <sqlFile path="DML/201802281657_update_image_urls_in_exercise_section_table.sql" relativeToChangelogFile="true" splitStatements="false" endDelimiter=";"/>
+    </changeSet>
+
 </databaseChangeLog>

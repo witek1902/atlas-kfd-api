@@ -1,0 +1,2 @@
+UPDATE public.exercise SET MUSCLE_IMAGE_URL = replace(MUSCLE_IMAGE_URL, '/images/', 'http://localhost:8081/images/');
+UPDATE public.exercise SET IMAGE_URL_LIST = replace(IMAGE_URL_LIST, '/images/', 'http://localhost:8081/images/');
