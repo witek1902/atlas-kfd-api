@@ -3,13 +3,12 @@ package pl.kfd.atlas.endpoint;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import pl.kfd.atlas.domain.Exercise;
-import pl.kfd.atlas.domain.ExerciseProvider;
-import pl.kfd.atlas.domain.ExerciseSection;
-import pl.kfd.atlas.domain.ExerciseSectionProvider;
+import pl.kfd.atlas.domain.*;
 import pl.kfd.atlas.domain.dto.ExerciseSectionBaseDto;
+import pl.kfd.atlas.domain.dto.ExerciseSectionDetailsDto;
 
 import javax.validation.Valid;
+import java.net.URI;
 import java.util.Collection;
 
 @RestController
@@ -17,31 +16,30 @@ import java.util.Collection;
 @RequiredArgsConstructor
 public class ExerciseSectionController {
 
+    private final ExerciseSectionSaver exerciseSectionSaver;
     private final ExerciseSectionProvider exerciseSectionProvider;
-    private final ExerciseProvider exerciseProvider;
+
 
     @GetMapping(path = "/sections")
     public Collection<ExerciseSectionBaseDto> sections() {
         return exerciseSectionProvider.getAll();
     }
 
-    @PostMapping(path = "/sections")
-    public ExerciseSection createSection(@Valid @RequestBody ExerciseSection exerciseSection) {
-        return exerciseSection;
-    }
 
     @GetMapping(path = "/sections/{sectionId}")
-    public ResponseEntity<ExerciseSection> sectionById(@PathVariable Long sectionId) {
-        ExerciseSection exerciseSection = exerciseSectionProvider.get(sectionId);
+    public ResponseEntity<ExerciseSectionDetailsDto> sectionById(@PathVariable Long sectionId) {
+        ExerciseSectionDetailsDto section = exerciseSectionProvider.get(sectionId);
 
-        if (exerciseSection == null)
+        if (section == null)
             return ResponseEntity.notFound().build();
 
-        return ResponseEntity.ok(exerciseSection);
+        return ResponseEntity.ok(section);
     }
 
-    @GetMapping(path = "/section/{sectionId}/exercises")
-    public Collection<Exercise> exercisesBySection(@PathVariable Long sectionId) {
-        return exerciseProvider.getForSection(sectionId);
+    @PostMapping(path = "/sections")
+    public ResponseEntity<?> createSection(@Valid @RequestBody ExerciseSectionBaseDto exerciseSection) {
+        exerciseSectionSaver.save(exerciseSection);
+
+        return ResponseEntity.created(URI.create("/sections")).build();
     }
 }

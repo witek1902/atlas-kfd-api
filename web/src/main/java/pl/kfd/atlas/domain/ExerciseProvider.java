@@ -2,10 +2,15 @@ package pl.kfd.atlas.domain;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Component;
+import pl.kfd.atlas.domain.dto.ExerciseBaseDto;
+import pl.kfd.atlas.domain.dto.ExerciseDetailsDto;
 
 import javax.validation.constraints.NotNull;
+import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
+import java.util.Set;
+import java.util.stream.Collectors;
 
 @Component
 @RequiredArgsConstructor
@@ -14,19 +19,29 @@ public class ExerciseProvider {
     private final ExerciseRepository exerciseRepository;
     private final ExerciseSectionRepository exerciseSectionRepository;
 
-    public Collection<Exercise> getForSection(@NotNull Long sectionId) {
-        return exerciseSectionRepository.findOne(sectionId).getExercises();
+
+    public Collection<ExerciseBaseDto> getAll() {
+        return exerciseRepository.findAll().stream()
+                .map(ExerciseBaseDto::convert)
+                .collect(Collectors.toList());
     }
 
-    public List<Exercise> getAll() {
-        return exerciseRepository.findAll();
+    public Collection<ExerciseBaseDto> getForSection(@NotNull Long sectionId) {
+        Set<Exercise> exercises = exerciseSectionRepository.findOne(sectionId).getExercises();
+        if(exercises == null)
+            return new ArrayList<>();
+
+        return exercises.stream()
+                .map(ExerciseBaseDto::convert)
+                .collect(Collectors.toList());
     }
 
-    public Exercise getById(@NotNull Long exerciseId) {
-        return exerciseRepository.findOne(exerciseId);
+    public ExerciseDetailsDto getById(@NotNull Long exerciseId) {
+        return ExerciseDetailsDto.convert(exerciseRepository.findOne(exerciseId));
     }
 
-    public Exercise getByCode(@NotNull String exerciseCode) {
-        return exerciseRepository.findByCodeIgnoreCase(exerciseCode);
+    public ExerciseDetailsDto getByCode(@NotNull String exerciseCode) {
+        return ExerciseDetailsDto.convert(exerciseRepository.findByCodeIgnoreCase(exerciseCode));
     }
+
 }

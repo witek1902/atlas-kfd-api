@@ -1,13 +1,13 @@
 package pl.kfd.atlas.domain.common;
 
-import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
+import lombok.RequiredArgsConstructor;
 
 import java.io.Serializable;
 
 @Data
-@AllArgsConstructor
+@RequiredArgsConstructor
 @EqualsAndHashCode
 public class Image implements Serializable {
 

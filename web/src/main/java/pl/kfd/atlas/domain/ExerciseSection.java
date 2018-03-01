@@ -33,4 +33,9 @@ public class ExerciseSection extends BaseEntity {
             inverseJoinColumns = @JoinColumn(name = "EXERCISE_ID")
     )
     private Set<Exercise> exercises;
+
+    public ExerciseSection(String title, String image) {
+        this.title = title;
+        this.image = new Image(image);
+    }
 }

@@ -3,6 +3,7 @@ package pl.kfd.atlas.domain;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Component;
 import pl.kfd.atlas.domain.dto.ExerciseSectionBaseDto;
+import pl.kfd.atlas.domain.dto.ExerciseSectionDetailsDto;
 
 import javax.validation.constraints.NotNull;
 import java.util.ArrayList;
@@ -15,7 +16,6 @@ import java.util.stream.Collectors;
 public class ExerciseSectionProvider {
 
     private final ExerciseSectionRepository exerciseSectionRepository;
-    private final ExerciseSectionBaseDtoConverter exerciseSectionBaseDtoConverter;
 
     public Collection<ExerciseSectionBaseDto> getAll() {
         List<ExerciseSection> sections = exerciseSectionRepository.findAll();
@@ -23,11 +23,12 @@ public class ExerciseSectionProvider {
             return new ArrayList<>();
 
         return sections.stream()
-                .map(exerciseSectionBaseDtoConverter::toDto)
+                .map(ExerciseSectionBaseDto::convert)
                 .collect(Collectors.toList());
     }
 
-    public ExerciseSection get(@NotNull Long sectionId) {
-        return exerciseSectionRepository.findOne(sectionId);
+    public ExerciseSectionDetailsDto get(@NotNull Long sectionId) {
+        ExerciseSection section = exerciseSectionRepository.findOne(sectionId);
+        return ExerciseSectionDetailsDto.convert(section);
     }
 }

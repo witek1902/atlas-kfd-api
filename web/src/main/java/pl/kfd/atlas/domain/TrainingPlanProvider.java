@@ -16,7 +16,6 @@ public class TrainingPlanProvider {
 
     private final TrainingPlanRepository trainingPlanRepository;
     private final TrainingPlanDayRepository trainingPlanDayRepository;
-    private final TrainingPlanBaseDtoConverter trainingPlanBaseDtoConverter;
 
     public Collection<TrainingPlanBaseDto> getAll() {
         List<TrainingPlan> plans = trainingPlanRepository.findAll();
@@ -24,7 +23,7 @@ public class TrainingPlanProvider {
             return new ArrayList<>();
 
         return plans.stream()
-                .map(trainingPlanBaseDtoConverter::toDto)
+                .map(TrainingPlanBaseDto::convert)
                 .collect(Collectors.toList());
     }
 
