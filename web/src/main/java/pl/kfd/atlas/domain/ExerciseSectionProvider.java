@@ -4,6 +4,7 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Component;
 import pl.kfd.atlas.domain.dto.ExerciseSectionBaseDto;
 import pl.kfd.atlas.domain.dto.ExerciseSectionDetailsDto;
+import pl.kfd.atlas.domain.dto.TrainingPlanBaseDto;
 
 import javax.validation.constraints.NotNull;
 import java.util.ArrayList;
@@ -24,6 +25,7 @@ public class ExerciseSectionProvider {
 
         return sections.stream()
                 .map(ExerciseSectionBaseDto::convert)
+                .sorted(ExerciseSectionBaseDto.BY_NAME_COMPARATOR)
                 .collect(Collectors.toList());
     }
 

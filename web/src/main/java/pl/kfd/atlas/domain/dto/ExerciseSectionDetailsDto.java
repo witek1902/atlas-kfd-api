@@ -27,6 +27,7 @@ public class ExerciseSectionDetailsDto implements Serializable {
                 .imageUrl(section.getImage().getUrl())
                 .exercises(section.getExercises().stream()
                         .map(ExerciseBaseDto::convert)
+                        .sorted(ExerciseBaseDto.BY_NAME_COMPARATOR)
                         .collect(Collectors.toList()))
                 .build();
     }

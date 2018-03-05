@@ -7,6 +7,7 @@ import pl.kfd.atlas.domain.TrainingPlan;
 import pl.kfd.atlas.domain.TrainingPlanDay;
 import pl.kfd.atlas.domain.TrainingPlanProvider;
 import pl.kfd.atlas.domain.dto.TrainingPlanBaseDto;
+import pl.kfd.atlas.domain.dto.TrainingPlanDetailsDto;
 
 import javax.validation.Valid;
 import java.util.Collection;
@@ -29,33 +30,21 @@ public class TrainingPlanController {
     }
 
     @GetMapping(path = "/trainingPlans/{trainingPlanId}")
-    public ResponseEntity<TrainingPlan> trainingPlanById(@PathVariable Long trainingPlanId) {
-        TrainingPlan trainingPlan = trainingPlanProvider.getById(trainingPlanId);
-
-        if(trainingPlan == null)
-            return ResponseEntity.notFound().build();
-
-        return ResponseEntity.ok(trainingPlan);
+    public ResponseEntity<TrainingPlanDetailsDto> trainingPlanById(@PathVariable Long trainingPlanId) {
+        TrainingPlanDetailsDto trainingPlan = trainingPlanProvider.getById(trainingPlanId);
+        return getTrainingPlanDetailsDtoResponseEntity(trainingPlan);
     }
 
     @GetMapping(path = "/trainingPlans/code/{trainingPlanCode}")
-    public ResponseEntity<TrainingPlan> trainingPlanByCode(@PathVariable String trainingPlanCode) {
-        TrainingPlan trainingPlan = trainingPlanProvider.getByCode(trainingPlanCode);
+    public ResponseEntity<TrainingPlanDetailsDto> trainingPlanByCode(@PathVariable String trainingPlanCode) {
+        TrainingPlanDetailsDto trainingPlan = trainingPlanProvider.getByCode(trainingPlanCode);
+        return getTrainingPlanDetailsDtoResponseEntity(trainingPlan);
+    }
 
+    private ResponseEntity<TrainingPlanDetailsDto> getTrainingPlanDetailsDtoResponseEntity(TrainingPlanDetailsDto trainingPlan) {
         if(trainingPlan == null)
             return ResponseEntity.notFound().build();
 
         return ResponseEntity.ok(trainingPlan);
     }
-
-    @GetMapping(path = "/trainingPlanDays/{trainingPlanDayId}")
-    public ResponseEntity<TrainingPlanDay> trainingPlanDays(@PathVariable Long trainingPlanDayId) {
-        TrainingPlanDay trainingPlanDay = trainingPlanProvider.getDay(trainingPlanDayId);
-
-        if(trainingPlanDay == null)
-            return ResponseEntity.notFound().build();
-
-        return ResponseEntity.ok(trainingPlanDay);
-    }
-
 }

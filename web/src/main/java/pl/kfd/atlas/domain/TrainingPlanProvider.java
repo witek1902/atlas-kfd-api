@@ -3,6 +3,7 @@ package pl.kfd.atlas.domain;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Component;
 import pl.kfd.atlas.domain.dto.TrainingPlanBaseDto;
+import pl.kfd.atlas.domain.dto.TrainingPlanDetailsDto;
 
 import javax.validation.constraints.NotNull;
 import java.util.ArrayList;
@@ -24,18 +25,19 @@ public class TrainingPlanProvider {
 
         return plans.stream()
                 .map(TrainingPlanBaseDto::convert)
+                .sorted(TrainingPlanBaseDto.BY_NAME_COMPARATOR)
                 .collect(Collectors.toList());
     }
 
-    public TrainingPlan getById(@NotNull Long trainingPlanId) {
-        return trainingPlanRepository.findOne(trainingPlanId);
+    public TrainingPlanDetailsDto getById(@NotNull Long trainingPlanId) {
+        return TrainingPlanDetailsDto.convert(trainingPlanRepository.findOne(trainingPlanId));
+    }
+
+    public TrainingPlanDetailsDto getByCode(@NotNull String trainingPlanCode) {
+        return TrainingPlanDetailsDto.convert(trainingPlanRepository.findByCodeIgnoreCase(trainingPlanCode));
     }
 
     public TrainingPlanDay getDay(@NotNull Long trainingPlanDayId) {
         return trainingPlanDayRepository.findOne(trainingPlanDayId);
-    }
-
-    public TrainingPlan getByCode(@NotNull String trainingPlanCode) {
-        return trainingPlanRepository.findByCodeIgnoreCase(trainingPlanCode);
     }
 }

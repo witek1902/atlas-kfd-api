@@ -23,6 +23,7 @@ public class ExerciseProvider {
     public Collection<ExerciseBaseDto> getAll() {
         return exerciseRepository.findAll().stream()
                 .map(ExerciseBaseDto::convert)
+                .sorted(ExerciseBaseDto.BY_NAME_COMPARATOR)
                 .collect(Collectors.toList());
     }
 
