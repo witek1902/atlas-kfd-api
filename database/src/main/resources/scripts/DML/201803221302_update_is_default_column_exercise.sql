@@ -1,0 +1,1 @@
+UPDATE public.exercise SET is_default = TRUE;

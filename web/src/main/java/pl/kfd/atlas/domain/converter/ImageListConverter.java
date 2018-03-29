@@ -1,4 +1,4 @@
-package pl.kfd.atlas.domain.converters;
+package pl.kfd.atlas.domain.converter;
 
 import pl.kfd.atlas.domain.common.Image;
 import pl.kfd.atlas.domain.common.ImageList;

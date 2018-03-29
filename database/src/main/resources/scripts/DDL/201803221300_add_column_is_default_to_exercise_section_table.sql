@@ -1,0 +1,1 @@
+ALTER TABLE public.exercise_section ADD COLUMN is_default BOOLEAN DEFAULT FALSE;

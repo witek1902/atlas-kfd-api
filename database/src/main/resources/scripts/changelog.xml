@@ -118,4 +118,20 @@
         <sqlFile path="DML/201802281657_update_image_urls_in_exercise_section_table.sql" relativeToChangelogFile="true" splitStatements="false" endDelimiter=";"/>
     </changeSet>
 
+    <changeSet id="DDL-201803221300_add_column_is_default_to_exercise_section_table" author="Robert Witkowski" context="DDL">
+        <sqlFile path="DDL/201803221300_add_column_is_default_to_exercise_section_table.sql" relativeToChangelogFile="true" splitStatements="false" endDelimiter=";"/>
+    </changeSet>
+
+    <changeSet id="DDL-201803221304_add_column_is_default_to_exercise_table" author="Robert Witkowski" context="DDL">
+        <sqlFile path="DDL/201803221304_add_column_is_default_to_exercise_table.sql" relativeToChangelogFile="true" splitStatements="false" endDelimiter=";"/>
+    </changeSet>
+
+    <changeSet id="DML-201803221301_update_is_default_column_exercise_section" author="Robert Witkowski" context="DML">
+        <sqlFile path="DML/201803221301_update_is_default_column_exercise_section.sql" relativeToChangelogFile="true" splitStatements="false" endDelimiter=";"/>
+    </changeSet>
+
+    <changeSet id="DML-201803221302_update_is_default_column_exercise" author="Robert Witkowski" context="DML">
+        <sqlFile path="DML/201803221302_update_is_default_column_exercise.sql" relativeToChangelogFile="true" splitStatements="false" endDelimiter=";"/>
+    </changeSet>
+
 </databaseChangeLog>

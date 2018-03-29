@@ -53,4 +53,8 @@ public class Exercise extends BaseEntity {
 
     @Column(name = "IMAGE_URL_LIST")
     private ImageList images;
+
+    @Column(name = "IS_DEFAULT", nullable = false)
+    private boolean isDefault;
+
 }

@@ -8,6 +8,7 @@ import pl.kfd.atlas.domain.common.BaseEntity;
 import pl.kfd.atlas.domain.common.Image;
 
 import javax.persistence.*;
+import java.util.HashSet;
 import java.util.Set;
 
 @Data
@@ -24,6 +25,9 @@ public class ExerciseSection extends BaseEntity {
     @Column(name = "ICON_URL")
     private Image image;
 
+    @Column(name = "IS_DEFAULT", nullable =  false)
+    private boolean isDefault;
+
     @ManyToMany(cascade = {
             CascadeType.PERSIST,
             CascadeType.MERGE
@@ -37,5 +41,22 @@ public class ExerciseSection extends BaseEntity {
     public ExerciseSection(String title, String image) {
         this.title = title;
         this.image = new Image(image);
+    }
+
+    public void addExercise(Exercise exercise) {
+        if(exercise == null)
+            return;
+
+        if(exercises == null)
+            exercises = new HashSet<>();
+
+        exercises.add(exercise);
+    }
+
+    public void removeExercise(Exercise exercise) {
+        if(exercise == null || exercises == null || exercises.isEmpty())
+            return;
+
+        exercises.remove(exercise);
     }
 }
