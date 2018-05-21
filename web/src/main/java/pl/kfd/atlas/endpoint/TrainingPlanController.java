@@ -24,11 +24,6 @@ public class TrainingPlanController {
         return trainingPlanProvider.getAll();
     }
 
-    @PostMapping(path = "/trainingPlans")
-    public TrainingPlan createTrainingPlan(@Valid @RequestBody TrainingPlan trainingPlan) {
-        return trainingPlan;
-    }
-
     @GetMapping(path = "/trainingPlans/{trainingPlanId}")
     public ResponseEntity<TrainingPlanDetailsDto> trainingPlanById(@PathVariable Long trainingPlanId) {
         TrainingPlanDetailsDto trainingPlan = trainingPlanProvider.getById(trainingPlanId);

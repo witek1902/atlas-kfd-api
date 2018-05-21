@@ -35,25 +35,4 @@ public class ExerciseSectionController {
 
         return ResponseEntity.ok(section);
     }
-
-    @PostMapping(path = "/sections")
-    public ResponseEntity<?> createSection(@Valid @RequestBody ExerciseSectionBaseDto exerciseSection) {
-        exerciseSectionModifier.save(exerciseSection);
-
-        return ResponseEntity.created(URI.create("/sections")).build();
-    }
-
-    @PostMapping(path = "/sections/{sectionId}/exercises")
-    public ResponseEntity<?> addExerciseToSection(@Valid @RequestBody ExerciseIdRequestDto exercise, @PathVariable Long sectionId) {
-        exerciseSectionModifier.addExerciseToSection(new AddExerciseToSectionRequestDto(sectionId, exercise.getExerciseId()));
-
-        return ResponseEntity.ok().build();
-    }
-
-    @DeleteMapping(path = "sections/{sectionId}/exercises/{exerciseId}")
-    public ResponseEntity<?> removeExerciseFromSection(@PathVariable Long sectionId, @PathVariable Long exerciseId) {
-        exerciseSectionModifier.removeExerciseFromSection(new RemoveExerciseFromSectionRequestDto(sectionId, exerciseId));
-
-        return ResponseEntity.ok().build();
-    }
 }
