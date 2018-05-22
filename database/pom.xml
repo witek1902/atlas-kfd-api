@@ -90,6 +90,7 @@
                         <version>${liquibase-maven-plugin.version}</version>
                         <configuration>
                             <propertyFile>src/main/resources/db.properties</propertyFile>
+                            <promptOnNonLocalDatabase>false</promptOnNonLocalDatabase>
                         </configuration>
                         <executions>
                             <execution>
